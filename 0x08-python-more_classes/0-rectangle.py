@@ -1,6 +1,7 @@
-#!/usr/bin/pythom3
+#!/usr/bin/python3
 """ an empty class that defines a rectangle"""
 
+
 class Rectangle:
-    """An  empty class that represents a rectangle"""
+    """An  empty class that would represent a rectangle"""
     pass
