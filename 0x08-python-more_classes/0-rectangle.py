@@ -2,5 +2,5 @@
 """ an empty class that defines a rectangle"""
 
 class Rectangle:
-    """An  empty class rhat represents a rectangle"""
+    """An  empty class that represents a rectangle"""
     pass
