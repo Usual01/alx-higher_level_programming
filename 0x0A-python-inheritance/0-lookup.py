@@ -3,4 +3,4 @@
 
 def lookup(self):
     """ list of available attributes and methods of an object"""
-    return (self)
+    return (dir(self))
