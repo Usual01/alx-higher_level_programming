@@ -1,0 +1,90 @@
+Test cases for 0-add_integer module
+===================================
+
+The 0-add_integer module takes two integer numbers or floats as arguments and returns the addition
+
+Use
+=====
+
+Importing function from the module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Adding two positive integers (i = 5 and j = 6)
+    >>> add_integer(5, 6)
+    11
+
+Adding one negative and one positive integer (j= -5 and k = 6)
+    >>> add_integer(-5, 6)
+    -11
+
+Sum of two negative integers (a = -1 and b = -10)
+    >>> add_integer(-1 ,-10)
+    -14
+
+Adding two integers with the second being the same as the default value of b (i = 5 and b = 9)
+    >>> add_integer(9)
+    14
+
+ a positive float and a positive integer (i = 6.5 and b = 5)
+    >>> add_integer(6.5, 5)
+    11
+
+Adding a float and an integer where the integer is the default value of b (i = 10.5 and j = 9)
+    >>> add_integer(10.5)
+    19
+
+Adding a positive float and a negative integer (i = 11.5 and j = -1)
+	    >>> add_integer(11.5, -1)
+	    10
+
+Adding two negative floats (i = -16.5 and b = -20)
+	    >>> add_integer(-16.5, -20)
+	    -36
+
+Adding an integer number and a string (a = 1 and b = "ALX")
+    >>> add_integer(1, "ALX")
+    Traceback (most recent call last):
+	      ...
+    TypeError: b must be an integer
+
+Passing no argument to the function
+    >>> add_integer(None)
+    Traceback (most recent call last):
+	      ...
+    TypeError: a must be an integer
+
+Adding a letter and a number (a = 'c' and b = 1)
+    >>> add_integer('c', 1)
+    Traceback (most recent call last):
+              ...
+    TypeError: a must be an integer
+
+Adding two letters (i = 'c' and j = 'm')
+    >>> add_integer('c', 'm')
+    Traceback (most recent call last):
+              ...
+    TypeError: a must be an integer
+
+Adding a tuple
+    >>> add_integer((11, 11))
+    Traceback (most recent call last):
+              ...
+    TypeError: a must be an integer
+
+Adding a number and a list
+    >>> add_integer(11, [])
+    Traceback (most recent call last):
+	      ...
+    TypeError: b must be an integer
+
+Passing a only one string
+    >>> add_integer("Hello")
+    Traceback (most recent call last):
+	      ...
+    TypeError: a must be an integer
+
+Adding two float numbers (i = 1.2 and j = 4.2)
+    >>> add_integer(1.5, 1.2)
+    2
+
+
