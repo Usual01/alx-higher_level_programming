@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const b = process.argv[2];
 
-if (!parseInt(x)) {
+if (!parseInt(b)) {
   console.log('Missing size');
 } else {
   for (let a = 0; a < x; a++) {
