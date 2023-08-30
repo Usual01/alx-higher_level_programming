@@ -1,0 +1,13 @@
+#!/bin/bash
+
+ROOT="/alx-higher_level_programming/0x0F-python-object_relational_mapping"
+
+files=$(find "$ROOT" -name "*.py")
+
+for file in $files
+do
+	chmod +x $file
+    echo "Running pycodestyle on $file"
+	echo " "
+    pycodestyle "$file"
+done
