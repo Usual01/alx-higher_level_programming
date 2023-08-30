@@ -1,6 +1,7 @@
 #!/usr/bin/node
-// Check the parameters provided
-
+/**
+ * Check the parameters provided
+ */
 class Rectangle {
     constructor (w, h) {
       if (typeof w === 'number' && w > 0 && typeof h === 'number' && h > 0) {
@@ -20,6 +21,18 @@ class Rectangle {
   
         console.log(myVar);
       }
+    }
+  
+    rotate () {
+      let temp = 0;
+      temp = this.width;
+      this.width = this.height;
+      this.height = temp;
+    }
+  
+    double () {
+      this.width *= 2;
+      this.height *= 2;
     }
   }
   module.exports = Rectangle;
